@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2017",
+    "outDir": "dist/out",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ES5",
+      "ES6",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "paths": {
+      "@bytm/*": ["bytm/*"],
+      "@utils/*": ["src/utils/*"],
+      "@root/*": ["*"],
+      "@/*": ["src/*"],
+    },
+  },
+  "include": [
+    "src/**/*",
+    "assets/**/*",
+    "node_modules/vite-userscript-plugin/types/violentmonkey.d.ts",
+  ],
+  "exclude": [
+    "node_modules/**/*",
+    "bytm/**/*",
+  ],
+}
